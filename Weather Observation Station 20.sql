@@ -1,0 +1,1 @@
+select round(S.Lat_n,4) from Station as s where (Select count(*) from Station where Lat_n<S.LAt_N)=(Select count(*) from Station where Lat_n>S.LAt_N)
